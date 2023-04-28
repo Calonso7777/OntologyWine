@@ -1,0 +1,1372 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate"
+     xml:base="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:World_Marine_Climate="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate">
+        <rdfs:comment>@Authors:
+Domingo Vázquez Cardeiro
+José Ramón Cabanillas García
+Borja Montes Prado</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_decreased -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_decreased">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_increased"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Temperature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Temperature"/>
+        <rdfs:comment>has decreased</rdfs:comment>
+        <rdfs:label>has_decreased</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_increased -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_increased">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Temperature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Temperature"/>
+        <rdfs:comment>has increased</rdfs:comment>
+        <rdfs:label>has_increased</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_pressure_higher -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_pressure_higher">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_pressure_lower"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Pressure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Pressure"/>
+        <rdfs:comment>has pressure higher</rdfs:comment>
+        <rdfs:label>has_pressure_higher</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_pressure_lower -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_pressure_lower">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Pressure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Pressure"/>
+        <rdfs:comment>has pressure lower</rdfs:comment>
+        <rdfs:label>has_pressure_lower</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_wind_faster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_wind_faster">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_wind_slower"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind"/>
+        <rdfs:comment>has wind faster</rdfs:comment>
+        <rdfs:label>has_wind_faster</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_wind_slower -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_wind_slower">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind"/>
+        <rdfs:comment>has wind slower</rdfs:comment>
+        <rdfs:label>has_wind_slower</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_height">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave_Height"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">80.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>has height</rdfs:comment>
+        <rdfs:label>has_height</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_period -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_period">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave_Period"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>has Period</rdfs:comment>
+        <rdfs:label>has_period</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_pressure -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_pressure">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Atmosferic_Pressure"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">870.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1085.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>has pressure</rdfs:comment>
+        <rdfs:label>has_pressure</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_temperature">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Air_Temperature"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-89.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>has temperature</rdfs:comment>
+        <rdfs:label>has_temperature</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_wind_speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_wind_speed">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind_Speed"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">380.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>has wind speed</rdfs:comment>
+        <rdfs:label>has_wind_speed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Air_Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Air_Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Temperature"/>
+        <rdfs:comment>Class Air Temperature</rdfs:comment>
+        <rdfs:label>Air_Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Atmosferic_Pressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Atmosferic_Pressure">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_pressure"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">870.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Pressure"/>
+        <rdfs:comment>Class Atmospheric Pressure</rdfs:comment>
+        <rdfs:label>Atmospheric_Pressure</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Atmospheric_pressure</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Cyclone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Cyclone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Oceanic_Weather_Phenomena"/>
+        <rdfs:comment>Class Cyclone</rdfs:comment>
+        <rdfs:label>Cyclone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Measurement_Data"/>
+        <rdfs:comment>Class Date</rdfs:comment>
+        <rdfs:label>Date</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Date</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Day -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Day">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Date"/>
+        <rdfs:comment>Class Day</rdfs:comment>
+        <rdfs:label>Day</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Day</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Dew_Point_Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Dew_Point_Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Temperature"/>
+        <rdfs:comment>Class Dew Point Temperature</rdfs:comment>
+        <rdfs:label>Dew_Point_Temperature</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Dew_point</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Hour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Hour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Date"/>
+        <rdfs:comment>Class Hour</rdfs:comment>
+        <rdfs:label>Hour</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Hour</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Hurricane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Hurricane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Oceanic_Weather_Phenomena"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Latitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Latitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Location"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Longitude"/>
+        <rdfs:comment>Class Latitude</rdfs:comment>
+        <rdfs:label>Latitude</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Latitude</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Measurement_Data"/>
+        <rdfs:comment>Class Location</rdfs:comment>
+        <rdfs:label>Location</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Location_(geography)</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Longitude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Longitude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Location"/>
+        <rdfs:comment>Class Longitude</rdfs:comment>
+        <rdfs:label>Longitude</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Longitude</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Measurement_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Measurement_Data">
+        <rdfs:comment>Class Measurement_Data</rdfs:comment>
+        <rdfs:label>Measurement_Data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Month -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Month">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Date"/>
+        <rdfs:comment>Class Month</rdfs:comment>
+        <rdfs:label>Month</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Month</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Ocean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Ocean">
+        <rdfs:comment>Class Ocean</rdfs:comment>
+        <rdfs:label>Ocean</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Oceanic_Weather_Phenomena -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Oceanic_Weather_Phenomena">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Weather_Phenomena"/>
+        <rdfs:comment>Class Oceanic_Wheather_Phenomena</rdfs:comment>
+        <rdfs:label>Oceanic_Wheather_Phenomena</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Pressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Pressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Weather_Value"/>
+        <rdfs:comment>Class Pressure</rdfs:comment>
+        <rdfs:label>Pressure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Sea_Surface_Pressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Sea_Surface_Pressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Pressure"/>
+        <rdfs:comment>Class Sea Surface Pressure</rdfs:comment>
+        <rdfs:label>Sea_Surface_Pressure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Sea_Surface_Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Sea_Surface_Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Temperature"/>
+        <rdfs:comment>Class Sea Surface Temperature</rdfs:comment>
+        <rdfs:label>Sea_Surface_Temperature</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Sea_surface_temperature</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Ship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Ship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Ocean"/>
+        <rdfs:comment>Class Ship</rdfs:comment>
+        <rdfs:label>Ship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Weather_Value"/>
+        <rdfs:comment>Class Temperature</rdfs:comment>
+        <rdfs:label>Temperature</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Temperature</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Tsunami -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Tsunami">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Oceanic_Weather_Phenomena"/>
+        <rdfs:comment>Class  Tsunami</rdfs:comment>
+        <rdfs:label>Tsunami</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Typhoon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Typhoon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Oceanic_Weather_Phenomena"/>
+        <rdfs:comment>Class Typhoon</rdfs:comment>
+        <rdfs:label>Typhoon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Water_Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Water_Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Temperature"/>
+        <rdfs:comment>Class Water Temperature</rdfs:comment>
+        <rdfs:label>Water_Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Waterspout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Waterspout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Oceanic_Weather_Phenomena"/>
+        <rdfs:comment>Class Waterspout</rdfs:comment>
+        <rdfs:label>Waterspout</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Ocean"/>
+        <rdfs:comment>Class Wave</rdfs:comment>
+        <rdfs:label>Wave</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Wave</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave_Direction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave_Direction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave"/>
+        <rdfs:comment>Class Wave Direction</rdfs:comment>
+        <rdfs:label>Wave_Direction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave_Height -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave_Height">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_height"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave"/>
+        <rdfs:comment>Class Wave Height</rdfs:comment>
+        <rdfs:label>Wave_Height</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave_Period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave_Period">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave"/>
+        <rdfs:comment>Class Wave Period</rdfs:comment>
+        <rdfs:label>Wave_Period</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave_Speed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave_Speed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave"/>
+        <rdfs:comment>Class Wave Speed</rdfs:comment>
+        <rdfs:label>Wave_Speed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Weather_Phenomena -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Weather_Phenomena">
+        <rdfs:comment>Class Wheather_Phenomena</rdfs:comment>
+        <rdfs:label>Weather_Phenomena</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Weather_Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Weather_Value">
+        <rdfs:comment>Class Weather_Value</rdfs:comment>
+        <rdfs:label>Weather_Value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#WetBulb_Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#WetBulb_Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Temperature"/>
+        <rdfs:comment>Class Wet Bulb Temperature</rdfs:comment>
+        <rdfs:label>Wet_Bulb_Temperature</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Wet-bulb_temperature</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Weather_Value"/>
+        <rdfs:comment>Class Wind</rdfs:comment>
+        <rdfs:label>Wind</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Wind</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind_Direction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind_Direction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind"/>
+        <rdfs:comment>Class Wind Direction</rdfs:comment>
+        <rdfs:label>Wind_Direction</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Wind_direction</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind_Speed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind_Speed">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_wind_speed"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind"/>
+        <rdfs:comment>Class Wind Speed</rdfs:comment>
+        <rdfs:label>Wind_Speed</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Wind_speed</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Date"/>
+        <rdfs:comment>Class Year</rdfs:comment>
+        <rdfs:label>Year</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Year</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Haiyan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Haiyan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Typhoon"/>
+        <World_Marine_Climate:has_wind_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">315.0</World_Marine_Climate:has_wind_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Hurricane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Hurricane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Weather_Phenomena"/>
+        <World_Marine_Climate:has_wind_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">315.0</World_Marine_Climate:has_wind_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Katrina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Katrina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Hurricane"/>
+        <World_Marine_Climate:has_pressure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">902.0</World_Marine_Climate:has_pressure>
+        <World_Marine_Climate:has_wind_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">280.0</World_Marine_Climate:has_wind_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Lisbon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Lisbon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Tsunami"/>
+        <World_Marine_Climate:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">30.0</World_Marine_Climate:has_height>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Mangkhut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Mangkhut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Typhoon"/>
+        <World_Marine_Climate:has_wind_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">285.0</World_Marine_Climate:has_wind_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Maria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Maria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Hurricane"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Nargis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Nargis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Cyclone"/>
+        <World_Marine_Climate:has_pressure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">962.0</World_Marine_Climate:has_pressure>
+        <World_Marine_Climate:has_wind_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#float">215.0</World_Marine_Climate:has_wind_speed>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Pipeline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Pipeline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave"/>
+        <World_Marine_Climate:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</World_Marine_Climate:has_height>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Queen_Mary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Queen_Mary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Ship"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Rough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Rough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave"/>
+        <World_Marine_Climate:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</World_Marine_Climate:has_height>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Sumatra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Sumatra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Tsunami"/>
+        <World_Marine_Climate:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</World_Marine_Climate:has_height>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Titanic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Titanic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Ship"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Yasi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Yasi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Cyclone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Teahupo&apos;o -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Teahupo&apos;o">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave"/>
+        <World_Marine_Climate:has_height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">12.0</World_Marine_Climate:has_height>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Hurricane">
+        <rdfs:comment>Class Hurricane</rdfs:comment>
+        <rdfs:label>Hurricane</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#X">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#S">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#F">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#P">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#L">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#X">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#S">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#F">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#P">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#L">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#W">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#H">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#W"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_height"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#W"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#H"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#H"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#H"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wave_Height"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Rough"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Oceanic_Weather_Phenomena"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind_Speed"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#S"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_wind_faster"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#S"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#F"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#F"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">118.0</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Atmosferic_Pressure"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#P"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_pressure_lower"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#P"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#L"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#L"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">979.0</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Hurricane"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Oceanic_Weather_Phenomena"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind_Speed"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#S"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_wind_faster"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#S"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#F"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#F"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">118.0</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Atmosferic_Pressure"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#P"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_pressure_lower"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#P"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#L"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#L"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">979.0</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Typhoon"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Oceanic_Weather_Phenomena"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Wind_Speed"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#S"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_wind_faster"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#S"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#F"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#F"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">118.0</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Atmosferic_Pressure"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#P"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#has_pressure_lower"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#P"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl:var#L"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="urn:swrl:var#L"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">979.0</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/dvc/ontologies/2019/3/World_Marine_Climate#Cyclone"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
